@@ -9,7 +9,12 @@
         <!--  當然也可以從address bar網址欄
               去調整path影響component的渲染      -->
         <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/about">About</router-link></li>
+        <!--  to比較鼓勵以route name properties來去做索引
+              這有利於之後更新path，等於path更動你也不需要修正這邊，因為name沒變
+              也對於較複雜的path來說較好編寫，因此推薦使用這種用法
+              to="routeName"
+          -->
+        <li><router-link to="About">About</router-link></li>
       </ul>
     </nav>
 </template>
