@@ -31,7 +31,7 @@ export default new Router({
     },
     {
       // url path改變成這個就能渲染about到App.vue設定的router位置
-      path: '/about',
+      path: '/aboutx',
       name: 'About',
       component: About
     },
